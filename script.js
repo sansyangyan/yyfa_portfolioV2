@@ -85,3 +85,12 @@ document.addEventListener('keydown', (e) => {
         panel.style.display = 'none';
     }
 });
+
+const menuButton = document.getElementById("menu-toggle");
+const links = document.querySelector(".links");
+
+menuButton.onclick = () => {
+
+    links.classList.toggle("show");
+
+};
