@@ -94,3 +94,13 @@ menuButton.onclick = () => {
     links.classList.toggle("show");
 
 };
+
+document.querySelectorAll(".links a").forEach(link => {
+
+    link.onclick = () => {
+
+        links.classList.remove("show");
+
+    };
+
+});
