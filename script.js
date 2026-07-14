@@ -86,14 +86,6 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-const menuButton = document.getElementById("menu-toggle");
-const links = document.querySelector(".links");
-
-menuButton.onclick = () => {
-
-    links.classList.toggle("show");
-
-};
 
 document.querySelectorAll(".links a").forEach(link => {
 
@@ -104,3 +96,12 @@ document.querySelectorAll(".links a").forEach(link => {
     };
 
 });
+
+const menuButton = document.getElementById("menu-toggle");
+const links = document.querySelector(".links");
+
+menuButton.onclick = () => {
+
+    links.classList.toggle("show");
+
+};
