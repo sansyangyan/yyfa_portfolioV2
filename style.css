@@ -134,10 +134,33 @@ margin-bottom:10px;
 margin-bottom:30px;
 }
 
-@media(max-width:900px){{
-    .bio-grid,#panel{{grid-template-columns:1fr}}
-    h2{{font-size:52px}}
-}}
+@media (max-width: 900px) {
+
+    h2 {
+        font-size: 52px;
+    }
+
+    .bio-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .portrait {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .bio-grid p {
+        font-size: 16px;
+        line-height: 1.8;
+        padding: 0 12px;
+    }
+
+    #panel {
+        grid-template-columns: 1fr;
+    }
+
+}
 
 
 #back-button{
@@ -185,136 +208,3 @@ background:#1a1a1a;
     background:#1a1a1a;
 }
 
-/* ========================= */
-/* Mobile Layout */
-/* ========================= */
-
-@media screen and (max-width: 768px) {
-
-    /* 顶部导航 */
-
-    nav {
-        padding: 20px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-    }
-
-    .site-title {
-        font-size: 2rem;
-    }
-
-    .site-subtitle {
-        font-size: 0.85rem;
-        line-height: 1.5;
-    }
-
-    .nav-links {
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-
-    .nav-links a {
-        font-size: 0.9rem;
-    }
-
-    /* section 标题 */
-
-    .section-title {
-        font-size: 3rem;
-        margin-bottom: 40px;
-    }
-
-    /* 瀑布流 */
-
-    .gallery-grid {
-        column-count: 1;
-        column-gap: 20px;
-        padding: 0 20px;
-    }
-
-    .gallery-item {
-        width: 100%;
-        margin-bottom: 20px;
-        break-inside: avoid;
-    }
-
-    .gallery-item img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-
-    /* 点开作品后的页面 */
-
-    .artwork-modal-content {
-
-        flex-direction: column;
-
-        width: 95vw;
-        height: auto;
-
-        max-height: 92vh;
-
-        overflow-y: auto;
-    }
-
-    .artwork-image-container {
-
-        width: 100%;
-        height: auto;
-    }
-
-    .artwork-image-container img {
-
-        max-height: 60vh;
-
-        object-fit: contain;
-    }
-
-    .artwork-info {
-
-        width: 100%;
-
-        padding: 24px;
-    }
-
-    .artwork-info h2 {
-
-        font-size: 1.8rem;
-    }
-
-    /* 左右箭头 */
-
-    .modal-arrow {
-
-        width: 44px;
-        height: 44px;
-
-        font-size: 24px;
-    }
-
-    /* biography */
-
-    .bio-container {
-
-        flex-direction: column;
-
-        padding: 40px 20px;
-
-        gap: 32px;
-    }
-
-    .bio-photo {
-
-        width: 220px;
-
-        margin: auto;
-    }
-
-    .bio-text {
-
-        width: 100%;
-    }
-
-}
