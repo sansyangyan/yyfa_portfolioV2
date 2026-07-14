@@ -217,7 +217,7 @@ background:#1a1a1a;
     cursor:pointer;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 700px){
 
     nav{
         padding:20px;
