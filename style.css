@@ -217,17 +217,18 @@ background:#1a1a1a;
     cursor:pointer;
 }
 
-@media (max-width: 900px){
+@media screen and (max-width: 900px){
 
     nav{
         padding:20px;
         align-items:flex-start;
     }
 
-    .logo{
-        font-size:22px;
-        max-width:180px;
-    }
+.logo{
+    font-size:22px;
+    max-width:180px;
+    line-height:1.1;
+}
 
     #menu-toggle{
         display:block;
