@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Yanfuan Yang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+<div class="logo">YANFUAN YANG</div>
+<div class="links">
+<a href="#painting">Drawing & Painting</a>
+<a href="#digital">Digital</a>
+<a href="#bio">Biography</a>
+</div>
+</nav>
+
+<header class="hero">
+<div class="slide active" style="background-image:url('images/The Sunset.jpg')"></div>
+<div class="slide" style="background-image:url('images/The Abyssal Sea.jpg')"></div>
+<div class="slide" style="background-image:url('images/conscious.jpg')"></div>
+<div class="overlay"></div>
+
+<div class="hero-text">
+<h1>Yanfuan Yang</h1>
+<p>School of Visual Arts Bachelor of Fine Arts<br>Boston University Master of Arts</p>
+</div>
+</header>
+
+<section id="painting">
+<h2>DRAWING & PAINTING</h2>
+
+<div class="gallery">
+
+<div class="art-card" data-title="Summer" data-size="18 × 24 in" data-media="Oil on canvas"><img src="images/untitiled.jpg"></div>
+<div class="art-card" data-title="The Waterfall" data-size="18 × 24 in" data-media="Oil on canvas"><img src="images/the waterfall.jpg"></div>
+<div class="art-card" data-title="Late Night" data-size="18 × 24 in" data-media="Oil on canvas"><img src="images/late night.jpeg"></div>
+<div class="art-card" data-title="Oil Painting Practice" data-size="16 × 20 in" data-media="Oil on canvas"><img src="images/Oil Painting Practice.jpeg"></div>
+<div class="art-card" data-title="Screaming" data-size="16 × 20 in" data-media="Oil on canvas"><img src="images/Screaming.jpeg"></div>
+
+<div class="art-card" data-title="The Sunset" data-size="30 × 40 in" data-media="Oil on canvas"><img src="images/The Sunset.jpg"></div>
+<div class="art-card" data-title="Good or Evil" data-size="30 × 40 in" data-media="Oil on canvas"><img src="images/good or evil.jpg"></div>
+<div class="art-card" data-title="The Abyssal Sea" data-size="18 × 24 in" data-media="Oil on canvas"><img src="images/The Abyssal Sea.jpg"></div>
+<div class="art-card" data-title="The Portrait of a Man" data-size="18 × 24 in" data-media="Oil on canvas"><img src="images/The Portrait of a Man.jpg"></div>
+<div class="art-card" data-title="Unusual Addiction" data-size="18 × 24 in" data-media="Oil on canvas"><img src="images/Unusual Addiction.jpg"></div>
+<div class="art-card" data-title="Conscious" data-size="12 × 9 in" data-media="Oil on panel"><img src="images/conscious.jpg"></div>
+
+<div class="art-card" data-title="Circle" data-size="30 × 30 in" data-media="Colored pencil on paper board"><img src="images/Circle.png"></div>
+<div class="art-card" data-title="The City" data-size="30 × 40 in" data-media="Colored pencil on paper board"><img src="images/The City.png"></div>
+
+<div class="art-card" data-title="Portrait Practice" data-size="9 × 12 in" data-media="Acrylic on toned paper"><img src="images/portrait practice.jpg"></div>
+<div class="art-card" data-title="Practice 2" data-size="9 × 12 in" data-media="Acrylic on toned paper"><img src="images/practice2.jpg"></div>
+
+<div class="art-card" data-title="A Old Man" data-size="8 × 12 in" data-media="Charcoal on paper"><img src="images/A old man.png"></div>
+
+</div>
+</section>
+
+<section id="digital">
+<h2>DIGITAL</h2>
+<div class="gallery">
+
+    <div class="art-card" data-title="Way Back Home" data-size="" data-media="Procreate">
+        <img src="images/Way back Home.png">
+    </div>
+
+    <div class="art-card" data-title="Practice 3" data-size="" data-media="Digital">
+        <img src="images/pracctice3.png">
+    </div>
+
+</div>
+</section>
+
+<section id="bio">
+<h2>BIOGRAPHY</h2>
+
+<div class="bio-grid">
+<img class="portrait" src="images/ac1b0f85209fef9f8a88ff2bc4f64ef6.jpg">
+
+<div>
+<p>Yanfuan Yang is an artist and educator based in Shanghai. She received a Bachelor of Fine Arts from the School of Visual Arts and a Master of Arts in Art Education from Boston University.</p>
+
+<p>Her work explores memory, identity, emotion, and imagined spaces through drawing, painting, and digital media.</p>
+</div>
+</div>
+
+</section>
+
+<div id="panel">
+<div id="gallery-nav">
+    <button id="prev-work">←</button>
+    <button id="next-work">→</button>
+</div>
+
+<div class="left">
+<img id="panel-image">
+</div>
+
+<div class="right">
+<button id="back-button">← Go Back</button>
+<h3 id="work-title">Select a work</h3>
+
+<div class="meta">
+<div><strong>Size</strong><p id="work-size">—</p></div>
+<div><strong>Media</strong><p id="work-media">—</p></div>
+</div>
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
